@@ -24,3 +24,6 @@ def form_valid(self, form):
     postdata.user = self.request.user
     postdata.save()
     return super().form_valid(form)
+
+class PostSuccessView(TemplateView):
+    template_name = 'post_success.html'
