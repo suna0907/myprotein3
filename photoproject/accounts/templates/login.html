@@ -1,4 +1,5 @@
 {% load static %}
+
 <!doctype html>
 <html lang="ja">
   <head>
@@ -49,7 +50,7 @@
     <img class="mb-4"
       src={% static "img/bootstrap-logo.svg" %}
       alt="" width="72"
-      heigth="57">
+      height="57">
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
     <label for="Username" class="visually-hidden">
@@ -80,7 +81,7 @@
         value="ログイン">
     
     <br><br>
-    <p><a href="#">パスワードを忘れましたか</a><p>
+    <p><a href="{% url 'password_reset' %}">パスワードを忘れましたか?</a><p>
 
     <input type="hidden"
             name="next"
