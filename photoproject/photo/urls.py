@@ -5,4 +5,6 @@ app_name = 'photo'
 
 urlpatterns = [
     path('', views.IndexView.as_view(), name='index'),
+
+    path('post/', views.CreatePhotoView.as_view(), name='post'),
 ]
