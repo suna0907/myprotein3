@@ -55,7 +55,7 @@
 
             <li><a href="#" class="text-white">マイページ</a><li>
             <li><a href="{% url 'accounts:logout' %}" class="text-white">ログアウト</a></li>
-            <li><a href="#" class="text-white">パスワードのリセット</a><li>
+            <li><a href="{% url 'password_reset' %}" class="text-white">パスワードのリセット</a><li>
             <li><a href="mailto:admin@example.com" class="text-white">Email me</a><li>
             {% else %}
 
